@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+body{
+    background-color: #000;
+}
+
+@media (max-width: 1024px) {
+    .logo>img{
+        margin-left: 20px;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .hamburger>img{
+        border-radius: 5px;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .btn{
+        width: 60%;
+    }
+
+    .btn> .btn-1,.btn-2{
+        display: none !important;
+    }
+
+    .btn>.btn-3{
+        margin-left: 60%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn>.btn-3>img{
+        height: 20px;
+        width: 20px;
+    }
+}
+/* MAIN SEC */
+/* respom */
+/* Tablet Screens (768px and below) */
+@media (max-width: 768px) {
+    .mainSec {
+        flex-direction: column;
+        padding: 30px 40px;
+        gap: 40px;
+    }
+
+    .rightSec > img {
+        height: 400px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .leftSec > .heading > h1 {
+        font-size: 3rem;
+    }
+
+    .leftSec > .para > p {
+        width: 100%;
+        font-size: medium;
+    }
+
+    .btnMain-1, .btnMain-2 {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    .mainSec {
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .rightSec > img {
+        height: 300px;
+    }
+
+    .leftSec > .heading > h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .leftSec > .para > p {
+        text-align: center;
+    }
+
+    .section > .leftSec {
+        align-items: center;
+    }
+
+    .btnMain-1, .btnMain-2 {
+        height: 50px;
+        font-size: 1rem;
+    }
+}
+
+/* respom */
+/* MAIN SEC */
+
+/* SECTION 2 */
+/* Tablet Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .companies {
+        height: auto;
+        margin-top: 40px;
+        padding: 20px 10px;
+    }
+
+    .companies > h1 {
+        font-size: 1.3rem;
+        padding: 0 10px;
+    }
+
+    .companies-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    .companies-logos > img {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .companies > h1 {
+        font-size: 1.1rem;
+    }
+
+    .companies-logos {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .companies-logos > img {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+/* SECTION 2 */
+
+/* section 3 */
+
+/* Tablet Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .sec3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 24px;
+        gap: 40px;
+    }
+
+    .paraSec3 > p {
+        width: 100%;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .childSec {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .childSec1, .childSec2 {
+        padding-right: 0;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .childSecP {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+
+    .btnSec-3 {
+        width: 100%;
+        max-width: 250px;
+        font-size: 1rem;
+    }
+
+    .btnMainNew > button {
+        font-size: x-small;
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .sec3 {
+        padding: 30px 16px;
+    }
+
+    .paraSec3 > p {
+        font-size: 0.85rem;
+    }
+
+    .btnSec3{
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .btnSec-3 {
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .btnMainNew > button {
+        font-size: xx-small;
+        padding: 6px 12px;
+    }
+
+    .childSec1 > img, .childSec2 > img {
+        padding: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .childSec1 > p, .childSec2 > p {
+        margin: 0px;
+        width: 100%;
+    }
+    .childSec1{
+        /* display: flex; */
+
+        width: 300px;
+    }
+
+
+    .childSec2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .childSec2 > p{
+        width: 180px;
+    }
+}
+
+/* section 3 */
+
+/* section 4 */
+/* Tablet Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Section 4 */
+    .sec4 {
+        padding: 40px 20px;
+    }
+
+    .sec4 > .trend {
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .oneLiner {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec4 > .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .step-content {
+        width: 90%;
+    }
+
+    /* sec 5 */
+    /* Tablet Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .sec5 {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 24px;
+    }
+
+    .leftSec5 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .btnSec5New > button {
+        width: 100%;
+        max-width: 200px;
+        font-size: 1rem;
+    }
+
+    .subChildSec1 {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        width: 23rem;
+
+    }
+
+    .subChildSec1 > .sec5Img > img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .subChildSec1 > .sec5Data > p:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .subChildSec1 > .sec5Data > p:nth-child(2) {
+        font-size: 13px;
+    }
+
+    .rightSec5 > img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .leftSec5 {
+        padding: 0 10px;
+    }
+
+    .btnSec5New > button {
+        font-size: 0.9rem;
+        height: 45px;
+    }
+
+    .subChildSec1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .subChildSec1 > .sec5Img > img {
+        margin: 0 0 10px 0;
+    }
+
+    .subChildSec1 > .sec5Data > p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .subChildSec1 > .sec5Data > p:nth-child(2) {
+        font-size: 0.8rem;
+    }
+
+    .rightSec5 > img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+    /* sec 5 */
+    
+    /* Section 6 */
+    .sec6 {
+        flex-direction: column;
+        padding: 40px 24px;
+        gap: 30px;
+    }
+
+    .sec6Left, .sec6Right {
+        width: 100%;
+        align-items: center;
+    }
+
+    .step {
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .steps-content {
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .btn6 {
+        width: 100%;
+        max-width: 200px;
+        height: 50px;
+    }
+}
+
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Section 4 */
+    .sec4 {
+        padding: 30px 16px;
+    }
+
+    .trend > span {
+        font-size: x-small;
+    }
+
+    .oneLiner {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Section 5 */
+    .rightSec5 > img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btnSec5New > button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .subChildSec1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .subChildSec1 > .sec5Img > img {
+        margin: 0 0 10px 0;
+    }
+
+    .subChildSec1 > .sec5Data > p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .subChildSec1 > .sec5Data > p:nth-child(2) {
+        font-size: 0.75rem;
+    }
+
+    /* Section 6 */
+    .step {
+        width: 100px;
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+
+    .line {
+        height: 60px;
+    }
+
+    .step-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .step-content h3 {
+        font-size: 16px;
+    }
+
+    .step-content p {
+        font-size: 13px;
+    }
+
+    .btn6 {
+        font-size: 0.9rem;
+        height: 50px;
+        width: 100%;
+        max-width: 180px;
+    }
+}
+
+/* section 4 */
+
+/* footer  */
+/* Tablet Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    footer {
+        padding: 40px 24px;
+    }
+
+    footer > .footerSec1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    footer > .footerSec1 > .txt > p {
+        font-size: small;
+    }
+
+    footer > .footerSec1 > form {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    footer > .footerSec1 > .input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    footer > .footerSec1 > .input > button {
+        width: 100%;
+        max-width: 200px;
+        font-size: small;
+    }
+
+    .footer-sections {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer-sections .section {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-icons a i {
+        margin-left: 10px;
+    }
+}
+
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    footer {
+        padding: 30px 16px;
+    }
+
+    footer > .footerSec1 > .input {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    footer > .footerSec1 > .input > input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    footer > .footerSec1 > .input > button {
+        height: 45px;
+        font-size: 0.9rem;
+    }
+
+    .footer-sections > .section-1 > img {
+        width: 120px;
+        height: auto;
+    }
+
+    .footer-sections ul li a {
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .social-icons a i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+/* footer  */
+
+/* internship page responsive code  */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 280px;
+        padding: 20px 16px;
+        z-index: 100;
+    }
+
+    .sidebar-links ul li a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 0 32px;
+    }
+    .internship_Sec2{
+        /* padding: 200px 23px; */
+        flex-direction: none;
+        margin-top: 180px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .internship_Sec2>h3{
+        display: flex;        
+    }
+    .para{
+        height: 147px;
+        font-size: 1.3rem;
+        text-align: center;
+
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 220px;
+        padding: 16px 12px;
+    }
+
+    .sidebar-links ul li {
+        padding: 0.8rem 0;
+    }
+
+    .sidebar-links ul li a {
+        font-size: 13px;
+    }
+
+    main {
+        padding: 0 16px;
+    }
+}
+
+
+
+/* internship page responsive code ended  */
+
+
+
+/* Graduate Program Responsive code started */
+
+@media (max-width: 428px) {
+    main {
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Gprogram_Sec1>.txt{
+        width: auto;
+      
+
+    }
+
+    .Gprogram_Sec1>.txt>h1{
+
+        font-size: 2rem;
+    }
+
+    .Gprogram_Sec1>.txt>p{
+        font-size: small ;
+        width: 21rem;
+
+    }
+
+    .Gprogram_Sec2{
+        margin: 0px;
+    }
+
+    #cards{
+        margin: 20px;
+    }
+
+
+}
+
+
+/* Graduate Program Responsive code started  ended */
+
